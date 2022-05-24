@@ -1,2 +1,6 @@
-# Exclude secret files 🕵️
+# Ignore secret files 🕵️
 .secrets
+
+# Ignore .meta files
+*.meta
+*/*.meta
