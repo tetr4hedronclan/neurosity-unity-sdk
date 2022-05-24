@@ -1,17 +1,28 @@
 ﻿using Newtonsoft.Json;
 using UnityEngine;
+using System;
+using System.Linq;
 
-namespace Notion.Unity
+
+namespace NeurositySDK
 {
     public class CalmHandler : IMetricHandler
     {
         public Metrics Metric => Metrics.Awareness;
+        public Action<float> OnCalmUpdated { get; set; }
         public string Label => "calm";
 
         public void Handle(string json)
         {
             BaseMetric metric = JsonConvert.DeserializeObject<BaseMetric>(json);
-            Debug.Log($"Handling {metric.Label} : {metric.Probability}");
+            var probability = metric.Probability;
+
+
+            if(probability != null)
+            {
+                Debug.Log($"Handling {metric.Label} : Prediction: {probability}");
+                OnCalmUpdated?.Invoke(probability);
+            }
         }
     }
 }

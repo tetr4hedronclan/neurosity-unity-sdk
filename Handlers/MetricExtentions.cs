@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace Notion.Unity
+namespace NeurositySDK
 {
     public static class MetricExtentions
     {

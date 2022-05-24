@@ -1,4 +1,4 @@
-﻿namespace Notion.Unity
+﻿namespace NeurositySDK
 {
     public interface ISettingsHandler
     {

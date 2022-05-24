@@ -2,7 +2,7 @@
 using System.Text;
 using UnityEngine;
 
-namespace Notion.Unity
+namespace NeurositySDK
 {
     public class SignalQualityHandler : IMetricHandler
     {

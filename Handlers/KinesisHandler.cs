@@ -3,7 +3,7 @@ using System;
 using System.Linq;
 using UnityEngine;
 
-namespace Notion.Unity
+namespace NeurositySDK
 {
     public class KinesisHandler : IMetricHandler
     {

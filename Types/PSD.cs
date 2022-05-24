@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Notion.Unity
+namespace NeurositySDK
 {
     public class PSD
     {

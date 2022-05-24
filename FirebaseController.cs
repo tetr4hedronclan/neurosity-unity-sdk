@@ -5,7 +5,7 @@ using System;
 using UnityEngine;
 using System.Threading.Tasks;
 
-namespace Notion.Unity
+namespace NeurositySDK
 {
     public class FirebaseController
     {

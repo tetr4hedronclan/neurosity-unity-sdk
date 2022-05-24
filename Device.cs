@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Notion.Unity
+namespace NeurositySDK
 {
     [CreateAssetMenu]
     public class Device : ScriptableObject
